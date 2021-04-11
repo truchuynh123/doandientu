@@ -105,24 +105,24 @@ function onConnectionLost(){
 		document.getElementById("thanhtruoc").value=100;
 		document.getElementById("hienthidosang").innerHTML= document.getElementById("thanhtruoc").value;
 		document.getElementById('anhdentang1').src='https://img.icons8.com/fluent/96/000000/light.png';
-		var msg="100";
-		console.log(msg);
-		var topic="dentang1";
-		message = new Paho.MQTT.Message(msg);
-		message.destinationName = topic;
-		mqtt.send(message);
+		//var msg="100";
+		//console.log(msg);
+		//var topic="dentang1";
+		////message = new Paho.MQTT.Message(msg);
+		//message.destinationName = topic;
+		//mqtt.send(message);
 		y=1;
 		}
 		else {
 	    document.getElementById("thanhtruoc").value=0;
 		document.getElementById("hienthidosang").innerHTML= document.getElementById("thanhtruoc").value;
 		document.getElementById('anhdentang1').src='https://img.icons8.com/fluent/48/000000/light-off.png'
-		var msg="0";
-		console.log(msg);
-		var topic="dentang1";
-		message = new Paho.MQTT.Message(msg);
-		message.destinationName = topic;
-		mqtt.send(message);
+		//var msg="0";
+		//console.log(msg);
+		//var topic="dentang1";
+		//message = new Paho.MQTT.Message(msg);
+		//message.destinationName = topic;
+		//mqtt.send(message);
 		y=0;
 		}
 		
